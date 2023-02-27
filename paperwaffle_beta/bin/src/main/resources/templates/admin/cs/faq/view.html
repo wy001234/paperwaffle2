@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자주묻는질문 보기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="/js/gnb.js"></script>
+    <!-- 2023/02/10 자주묻는질문 보기 화면구현 - 길은섭 -->
+</head>
+<body>
+    <div id="admin-wrapper">
+        <header>
+            <div>
+                <a href="/index.html" class="logo">
+                    <img src="/img/admin_logo.png" alt="admin_logo">
+                </a>
+                <p>
+                    <span>홍길동님 반갑습니다. </span>
+                    <a href="/index.html">HOME |</a>
+                    <a href="#">로그아웃 |</a>
+                    <a href="./list.html">고객센터</a>
+                </p>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <ul id="gnb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            환경설정
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">기본환경설정</a>
+                            </li>
+                            <li>
+                                <a href="#">배너관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-store" aria-hidden="true"></i>
+                            상점관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">판매자현황</a>
+                            </li>
+                            <li>
+                                <a href="#">재고관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            회원관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">회원현황</a>
+                            </li>
+                            <li>
+                                <a href="#">포인트관리</a>
+                            </li>
+                            <li>
+                                <a href="#">비회원관리</a>
+                            </li>
+                            <li>
+                                <a href="#">접속자집계</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-box-open" aria-hidden="true"></i>
+                            상품관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="/product/list.html">상품목록</a>
+                            </li>
+                            <li>
+                                <a href="/product/register.html">상품등록</a>
+                            </li>
+                            <li>
+                                <a href="#">재고관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            주문관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">주문현황</a>
+                            </li>
+                            <li>
+                                <a href="#">매출현황</a>
+                            </li>
+                            <li>
+                                <a href="#">결제관리</a>
+                            </li>
+                            <li>
+                                <a href="#">배송관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            고객센터
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                            <li>
+                                <a href="#">문의하기</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </aside>
+            <!-- view -->
+            <section id="admin-faq-view">
+                <nav>
+                    <h3>자주묻는질문 보기</h3>
+                    <p>
+                        HOME > 고객센터 > 
+                        <strong>자주묻는질문</strong>
+                    </p>
+                </nav>
+                <section>
+                    <table>
+                        <tr>
+                            <td>유형</td>
+                            <td>회원 - 가입</td>
+                        </tr>
+                        <tr>
+                            <td>제목</td>
+                            <td>개인회원과 법인회원에 차이가 있나요?</td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td>
+                                <p>
+                                    개인회원은 본인인증, 법인회원은 사업자등록번호를 기준으로 사업자 인증 후 가입 가능</br>
+                                    합니다.</br>
+                                    개인회원에서 법인회원(사업자 회원)으로 전환은 불가하므로 법인회원(사업자 회원) 전환</br>
+                                    은 신규 가입으로 진행을 해야 합니다.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="./list.html">목록</a>
+                    <a href="./modify.html">수정</a>
+                    <a href="#">삭제</a>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>
+                    Copyright ©kmarket.co.kr All rights reserved. KMARKET ADMINISTRATOR Version 5.4.1.2
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kmarket Inc. 상상하는 모든 것</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/company.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        $(function(){
+
+            $(window).scroll(function(){
+                let top = $(this).scrollTop();
+                if(top > 0){
+                    $('#wrapper > header').css('background', 'white');
+                    $('#wrapper > header a').css('color', '#222');
+                    $('#wrapper > header img').attr('src', './kcy_img/company_header_logo1.png');
+                }else{
+                    $('#wrapper > header').css('background', 'transparent');
+                    $('#wrapper > header a').css('color', '#fff');
+                    $('#wrapper > header img').attr('src', './kcy_img/company_header_logo2.png');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div>
+                <a href="./index.html" style="color: rgb(255, 255, 255);">
+                    <img src="./kcy_img/company_header_logo2.png" width="180" alt="로고2">
+                </a>
+                <ul>
+                    <li><a href="./introduce.html" style="color: rgb(255, 255, 255);">회사소개</a></li>
+                    <li><a href="./notice.html" style="color: rgb(255, 255, 255);">전자공시</a></li>
+                    <li><a href="#" style="color: rgb(255, 255, 255);">홍보채널</a></li>
+                    <li><a href="#" style="color: rgb(255, 255, 255);">투명경영</a></li>
+                </ul>
+            </div>
+        </header>
+        <main id="notice">
+            <div class="cover">
+                <div>
+                    <h1>전자공시</h1>
+                    <p>
+                        (문구제작)
+                    </p>
+                </div>
+            </div>
+            <section class="content">
+                <img src="./kcy_img/notice_sample.png">
+            </section>
+        </main>
+        <footer>
+            <div>
+                <img src="../img/footer_logo.png" alt="푸터로고">
+                <p>
+                    대표자 : 홍길동 사업자등록번호 : 123-45-67890 부산광역시 강남구 테헤란로 123 통신판매업 신고번호 : 제2021-부산강남-12345호<br>
+                    개인정보보호책임자 : 김춘추 FAX : 02-1234-5678 help@kmarket.com
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

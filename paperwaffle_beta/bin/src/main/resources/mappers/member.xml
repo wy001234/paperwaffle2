@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.kmarket2.dao.MemberDAO">
+	<select id="selectTerms" resultType="kr.co.kmarket2.vo.MemberTermsVO">
+		select * from `km_member_terms`;
+	</select>
+	
+	<insert id="insertUserNormal">
+		insert into `km_member` set
+			`uid`=#{uid},
+            `pass`=#{pass},
+            `name`=#{name},
+            `gender`=#{gender},
+            `hp`=#{hp},
+            `email`=#{email},
+            `type`=#{type},
+            `level`=#{level},
+            `zip`=#{zip},
+            `addr1`=#{addr1},
+            `addr2`=#{addr2},
+            `regip`=#{regip},
+            `locationTerms`=#{locationTerms},
+            `rdate`=NOW();
+	</insert>
+	
+	<insert id="insertUserSeller">
+		insert into `km_member` set
+			`uid`=#{uid},
+            `pass`=#{pass},
+            `name`='판매자',
+            `gender`=3,
+            `email`=#{email},
+            `type`=#{type},
+            `point`=null,
+            `level`=#{level},
+            `company`=#{company},
+            `ceo`=#{ceo},
+            `bizRegNum`=#{bizRegNum},
+            `comRegNum`=#{comRegNum},
+            `tel`=#{tel},
+            `manager`=#{manager},
+            `managerHp`=#{managerHp},
+            `fax`=#{fax},
+            `zip`=#{zip},
+            `addr1`=#{addr1},
+            `addr2`=#{addr2},
+            `regip`=#{regip},
+            `rdate`=NOW();
+	</insert>
+
+	<select id="findId" parameterType="kr.co.kmarket2.vo.MemberVO" resultType="kr.co.kmarket2.vo.MemberVO">
+		select `uid`, `name`, `email`, `rdate` from `km_member` where `name`=#{name} and `email`=#{email}";
+	</select>
+
+</mapper>

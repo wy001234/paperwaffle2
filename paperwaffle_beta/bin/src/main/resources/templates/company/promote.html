@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kmarket Inc. 상상하는 모든것</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(window).scroll(function(){
+                
+                let top = $(this).scrollTop();
+                if(top > 10){
+                    $('#wrapper > header').css('background', 'white');
+                    $('#wrapper > header a').css('color', '#222');
+                    $('#wrapper > header img').attr('src', './img/company_header_logo1.png');
+                }else{
+                    $('#wrapper > header').css('background', 'transparent');
+                    $('#wrapper > header a').css('color', '#fff');
+                    $('#wrapper > header img').attr('src', './img/company_header_logo2.png');
+                }
+
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="./css/company.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header style="background: transparent;">
+            <div>
+                <a href="#"><img src="./img/company_header_logo2.png" alt="로고2" width="180px"></a>
+                <ul>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">전자공시</a></li>
+                    <li><a href="#">홍보채널</a></li>
+                    <li><a href="#">투명경영</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main id="promote">
+            <div class="cover">
+                <div>
+                    <h1>홍보채널</h1>
+                    <br>
+                    <p>미디어 속 KMARKET의 영상을<br>소개해드립니다.</p>
+                </div>
+            </div>
+            <section class="content">
+                <article>
+                    <iframe width="720" height="400" src="https://www.youtube.com/embed/LQzai25zk1A" frameborder="0" title="Youtube video player">
+
+                    </iframe>
+                    <h3>
+                        cignature - AURORA
+                    </h3>
+                    <p>#엠카운트다운 EP.782 | Mnet 230202 방송</p>
+                </article>
+                <article>
+                    <iframe width="720" height="400" src="https://www.youtube.com/embed/LQzai25zk1A" frameborder="0" title="Youtube video player">
+
+                    </iframe>
+                    <h3>
+                        cignature - AURORA
+                    </h3>
+                    <p>#엠카운트다운 EP.782 | Mnet 230202 방송</p>
+                </article>
+                <article>
+                    <iframe width="720" height="400" src="https://www.youtube.com/embed/LQzai25zk1A" frameborder="0" title="Youtube video player">
+
+                    </iframe>
+                    <h3>
+                        cignature - AURORA
+                    </h3>
+                    <p>#엠카운트다운 EP.782 | Mnet 230202 방송</p>
+                </article>
+                <article>
+                    <iframe width="720" height="400" src="https://www.youtube.com/embed/LQzai25zk1A" frameborder="0" title="Youtube video player">
+
+                    </iframe>
+                    <h3>
+                        cignature - AURORA
+                    </h3>
+                    <p>#엠카운트다운 EP.782 | Mnet 230202 방송</p>
+                </article>
+                <article>
+                    <iframe width="720" height="400" src="https://www.youtube.com/embed/LQzai25zk1A" frameborder="0" title="Youtube video player">
+
+                    </iframe>
+                    <h3>
+                        cignature - AURORA
+                    </h3>
+                    <p>#엠카운트다운 EP.782 | Mnet 230202 방송</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <img src="../img/footer_logo.png" alt="footer 이미지">
+                <p>대표자 : 홍길동 사업자 등록번호 : 123-45-67890 부산광역시 강남구 테헤란로 123 통신판매업 신고번호 : 제 2021-부산강남-12345호
+                    <br>개인정보보호책임자 : 김춘추 FAX : 02-1234-5678 help@kmarket.com
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

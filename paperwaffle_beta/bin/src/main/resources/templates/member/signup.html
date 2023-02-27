@@ -1,0 +1,76 @@
+<th:block th:include="@{member/_header.html}"/>
+<script>
+    	$(function(){
+    		
+    		// signup 페이지 파라미터 값 추출 (normal / seller에 따른 약관 출력)
+    		var urlParams = new URL(location.href).searchParams;
+    		var type = urlParams.get('type');
+    		console.log(type);
+    		
+    		// 필수사항 동의 체크
+    		$('.agree').click(function(){
+
+    			let chk1 = $('input[name=agree1]').is(':checked');
+    			let chk2 = $('input[name=agree2]').is(':checked');
+        		let chk3 = $('input[name=agree3]').is(':checked');
+        		let chk4 = $('input[name=agree4]').is(':checked');
+        		
+        		if(chk1 && chk2 && chk3){
+        			if(chk4){
+        				if(type == 'normal'){
+        					location.href="/Kmarket2/member/register?locationTerms=1";
+        				}else{
+        					location.href="/Kmarket2/member/registerSeller";
+        				}
+        			}else{
+        				if(type == 'normal'){
+        					location.href="/Kmarket2/member/register?locationTerms=0";
+        				}else{
+        					location.href="/Kmarket2/member/registerSeller";
+        				}
+        			}
+        			
+        		}else{
+        			alert('동의 체크를 하십시오.')
+        			return false;
+        		}
+    		});
+    	});
+</script>
+   <main id="member">
+	<div class="signup">
+		<nav>
+			<h1>약관동의</h1>
+		</nav>
+		<section>
+			<h3><span class="essential">(필수)</span>케이마켓 이용약관</h3>
+			<th:block th:if="${type == 'normal'}">
+			<textarea class="terms" readonly>[[${vo.terms}]]</textarea>
+			</th:block>
+			<th:block th:unless="${type == 'normal'}">
+			<textarea class="terms" readonly>[[${vo.tax}]]</textarea>
+			</th:block>
+			<label><input type="checkbox" name="agree1" />동의합니다.</label>
+			
+			<h3><span class="essential">(필수)</span>전자금융거래 이용약관</h3>
+			<textarea class="financial" readonly>[[${vo.finance}]]</textarea>
+			<label><input type="checkbox" name="agree2" />동의합니다.</label>
+		
+			<h3><span class="essential">(필수)</span>개인정보 수집동의</h3>
+			<textarea class="privacy" readonly>[[${vo.privacy}]]</textarea>
+			<label><input type="checkbox" name="agree3" />동의합니다.</label>
+		</section>
+		
+		<th:block th:if="${type == 'normal'}">
+		<section>
+			<h3><span class="optional">(선택)</span>위치정보 이용약관</h3>
+			<textarea class="location" readonly>[[${vo.location}]]</textarea>
+			<label><input type="checkbox" name="agree4" />동의합니다.</label>
+		</section>
+		</th:block>
+		<div>
+			<input type="button" class="agree" value="동의하기"/>
+		</div>
+	</div>
+</main>        
+<th:block th:include="@{member/_footer.html}"/>

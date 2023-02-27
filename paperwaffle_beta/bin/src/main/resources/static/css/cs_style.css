@@ -1,0 +1,1255 @@
+/* index */
+/*------------------------------------------------------------------*/
+#cs {
+    width: 100%;
+    height: auto;
+}
+
+#cs > .main {
+    width: 100%;
+    height: auto;
+}
+
+#cs > .main > .title {
+    font-size: 56px;
+    margin: 60px 0;
+    text-align: center;
+}
+
+#cs > .main > .title > strong {
+    font-size: 56px;
+    color: #45ad4a;
+}
+
+#cs > .main > section {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 36px;
+    border-top: 1px solid #e9e9e9;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+#cs > .main > section > h1 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#cs > .main > section > h1 > a {
+    float: right;
+    font-size: 14px;
+    margin-top: 6px;
+    color: #555555;
+}
+
+#cs > .main > section > h1 > a::after {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    content: "";
+    background: url(../img/cs_sprites.png)no-repeat;
+    background-position: -230px -276px;
+    background-size: 750px auto;
+    vertical-align: top;
+    margin-left: 6px;
+}
+
+#cs > .main > section > ul > li {
+    text-indent: 10px;
+    margin-top: 12px;
+}
+
+#cs > .main > section > ul .title {
+    font-size: 18px;
+    color: #111111;
+}
+
+#cs > .main > section > ul > li > span {
+    color: #777777;
+}
+
+#cs > .main > .faq > ol {
+    width: 1000px;
+    height: auto;
+    margin: 60px auto;
+    overflow: hidden;
+}
+
+#cs > .main > .faq > ol > li {
+    float: left;
+    width: 14.28%;
+    height: 128px;
+    text-align: center;
+}
+
+#cs > .main > .faq > ol > li > a {
+    display: inline-block;
+    width: 90px;
+    height: 90px;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url(../img/cs_sprites.png);
+    background-repeat: no-repeat;
+    background-size: 750px auto;
+}
+
+#cs > .main > .faq > ol > li:nth-child(2) > a {
+    background-position: -184px 0;
+}
+
+#cs > .main > .faq > ol > li:nth-child(3) > a {
+    background-position: -276px 0;
+}
+
+#cs > .main > .faq > ol > li:nth-child(4) > a {
+    background-position: -368px 0;
+}
+
+#cs > .main > .faq > ol > li:nth-child(5) > a {
+    background-position: -460px 0;
+}
+
+#cs > .main > .faq > ol > li:nth-child(6) > a {
+    background-position: -552px 0;
+}
+
+#cs > .main > .faq > ol > li:nth-child(7) > a {
+    background-position: -644px 0;
+}
+
+#cs > .main > .faq > ol > li > a > span {
+    position: relative;
+    top: 100px;
+    font-size: 14px;
+}
+
+#cs > .main > .qna > ul > li > p {
+    float: right;
+    margin-right: 10px;
+}
+
+#cs > .main > .qna > ul > li > p .uid{
+    margin-right: 10px;
+}
+
+#cs > .main > .qna > ul > li > p .date{
+    color: #777777;
+}
+
+#cs > .main > .qna > a.ask {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0089FF;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#cs > .main > .tel {
+    overflow: hidden;
+}
+
+#cs > .main > .tel > article {
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#cs > .main > .tel > article > div {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#cs > .main > .tel > article > div > h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+#cs > .main > .tel > article > div > p {
+    margin-bottom: 16px;
+}
+
+#cs > .main > .tel > article > div > p > span {
+    font-size: 14px;
+}
+
+#cs > .main > .tel > article > div > p > strong {
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 6px;
+    box-sizing: border-box;
+}
+
+#cs > .main > .tel > article > div > p > a {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* 공지사항 notice list*/
+/*---------------------------------------------------------------------*/
+#cs > .notice {
+
+}
+
+#cs > .notice > nav {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .notice > nav > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#cs > .notice > nav > div > p {
+    font-size: 16px;
+    margin-top: 16px;
+    float: left;
+}
+
+#cs > .notice > nav > div > p >span {
+    margin: 0px 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+#cs > .notice > section {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cs > .notice > .list > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .notice > .list > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .notice > .list > aside > ul {}
+
+#cs > .notice > .list > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .notice > .list > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .notice > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .notice > .list > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+#cs > .notice > .list > article {
+    float: right;
+    padding: 26px;
+    width: 980px;
+    min-height: 600px;
+    box-sizing: border-box;
+    
+}
+
+#cs > .notice > .list > article > nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .notice > .list > article > nav > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .notice > .list > article > nav > h2 {
+    font-size: 20px;
+}
+
+#cs > .notice > .list > article > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #000000;
+}
+
+#cs > .notice > .list > article > table > tr {
+    width: 100%;
+    height: 26px;
+}
+
+#cs > .notice > .list > article > table td {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cs > .notice > .list > article > table  a {
+    font-size: 16px;
+}
+
+#cs > .notice > .list > article > table td:last-child {
+    text-align: center;
+    font-size: 14px;
+}
+
+#cs > .notice > .list > article > .page {
+    text-align: center;
+    margin-top: 26px;
+}
+
+#cs > .notice > .list > article > .page > a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 34px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+#cs > .notice > .list > article > .page > .on {
+    background: #006cff;
+    border-radius: 17px;
+    color: #fff;
+}
+
+#cs > .notice > .list > article > .page > .prev {
+    font-size: 0px;
+    background-image: url(../img/cs_sprites.png);
+    background-position: -706px -652px;
+}
+
+/* 나중에 뒤에 페이지로 넘어가면 앞 페이지로 넘어갈 수 있기 때문에 진한 검은색으로*/
+
+#cs > .notice > .list > article > .page > .next {
+    font-size: 0px;
+    background-image: url(../img/cs_sprites.png);
+    background-position: -628px -652px;
+}
+
+/* 공지사항 notice view*/
+/*---------------------------------------------------------------------*/
+
+#cs > .notice > .view > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .notice > .view > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .notice > .view > aside > ul {}
+
+#cs > .notice > .view > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .notice > .view > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .notice > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .notice > .view > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+#cs > .notice > section > article {
+    float: right;
+    width: 980px;
+    min-height: 600px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .notice > .view > article > div.top {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .notice> .view > article > .top > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .notice > .view > article > .top > h2 {
+    font-size: 20px;
+}
+
+#cs > .notice > .view > article > nav {
+    width: 100%;
+    margin-bottom: 26px;
+    border-top: 2px solid#111;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .notice > .view > article > nav > .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#cs > .notice > .view > article > nav > .date {
+    font-size: 14px;
+    color: #777777;
+}
+
+#cs > .notice > .view > article > .content {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#cs > .notice > .view > article > .content > p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#cs > .notice > .view > article > .btnList {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 58px;
+    box-sizing: border-box;
+}
+
+/* 자주 묻는 질문 faq list */
+/*----------------------------------------------------------------------*/
+
+#cs > .faq {
+
+}
+
+#cs > .faq > nav {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .faq > nav > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#cs > .faq > nav > div > p {
+    font-size: 16px;
+    margin-top: 16px;
+    float: left;
+}
+
+#cs > .faq > nav > div > p >span {
+    margin: 0px 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+#cs > .faq > section {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cs > .faq > .list > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .faq > .list > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .faq > .list > aside > ul {}
+
+#cs > .faq > .list > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .faq > .list > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .faq > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .faq > .list > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+#cs > .faq > .list > article {
+    float: right;
+    padding: 26px;
+    width: 980px;
+    min-height: 600px;
+    box-sizing: border-box;
+    
+}
+
+#cs > .faq > .list > article > nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+#cs > .faq > .list > article > nav > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .faq > .list > article > nav > h2 {
+    font-size: 20px;
+}
+
+#cs > .faq > .list > article > div {
+    margin-top: 26px;
+}
+
+#cs > .faq > .list > article > div > h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#cs > .faq > .list > article > div > ul {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#cs > .faq > .list > article > div > ul > li {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+#cs > .faq > .list > article > div > ul > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+#cs > .faq > .list > article > div > ul > li > a > span {
+    color: #006CFF;
+    margin-right: 6px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#cs > .faq > .list > article > div > ul > .more {
+    display: block !important;
+    border-bottom: none;
+    text-align: center;
+}
+
+/* faq view */
+/*---------------------------------------------------------------------*/
+
+#cs > .faq > .view > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .faq > .view > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .faq > .view > aside > ul {}
+
+#cs > .faq > .view > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .faq > .view > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .faq > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .faq > .view > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+#cs > .faq > section > article {
+    float: right;
+    width: 980px;
+    min-height: 600px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .faq > .view > article > div.top {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+#cs > .faq> .view > article > .top > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .faq > .view > article > .top > h2 {
+    font-size: 20px;
+}
+
+#cs > .faq > section > article > nav {
+    width: 100%;
+    margin-bottom: 26px;
+    border-top: 2px solid#111;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .faq > .view > article > nav > .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#cs > .faq > .view > article > nav > .title > span {
+    color: #006CFF;
+    margin-right: 6px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#cs > .faq > .view > article > nav > .date {
+    font-size: 14px;
+    color: #777777;
+}
+
+#cs > .faq > .view > article > .content {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#cs > .faq > .view > article > .content > p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#cs > .faq > .view > article > .btnList {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 58px;
+    box-sizing: border-box;
+}
+
+/* qna list */
+/*--------------------------------------------------------------------*/
+#cs > .qna {
+
+}
+
+#cs > .qna > nav {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .qna > nav > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#cs > .qna > nav > div > p {
+    font-size: 16px;
+    margin-top: 16px;
+    float: left;
+}
+
+#cs > .qna > nav > div > p >span {
+    margin: 0px 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+#cs > .qna > section {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cs > .qna > .list > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .qna > .list > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .list > aside > ul {}
+
+#cs > .qna > .list > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .qna > .list > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .qna > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .qna > .list > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+#cs > .qna > .list > article {
+    float: right;
+    padding: 26px;
+    width: 980px;
+    min-height: 600px;
+    box-sizing: border-box;
+    
+}
+
+#cs > .qna > .list > article > nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .list > article > nav > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .qna > .list > article > nav > h2 {
+    font-size: 20px;
+}
+
+#cs > .qna > .list > article > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #000000;
+}
+
+#cs > .qna > .list > article > table > tr {
+    width: 100%;
+    height: 26px;
+}
+
+#cs > .qna > .list > article > table td {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cs > .qna > .list > article > table > tbody > tr > td.complete {
+    font-size: 16px;
+    text-align: center;
+    color: #067dfd;
+}
+
+#cs > .qna > .list > article > table > tbody > tr > td.progress {
+    font-size: 16px;
+    text-align: center;
+    color: #9e9e9e;
+}
+
+#cs > .qna > .list > article > table  a {
+    font-size: 16px;
+}
+
+#cs > .qna > .list > article > table td:last-child {
+    text-align: center;
+    font-size: 14px;
+}
+
+#cs > .qna > .list > article > .page {
+    text-align: center;
+    margin-top: 26px;
+}
+
+#cs > .qna > .list > article > .page > a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 34px;
+    font-weight: bold;
+    vertical-align: bottom;
+}
+
+#cs > .qna > .list > article > .page > .on {
+    background: #006cff;
+    border-radius: 17px;
+    color: #fff;
+}
+
+#cs > .qna > .list > article > .page > .prev {
+    font-size: 0px;
+    background-image: url(../img/cs_sprites.png);
+    background-position: -706px -652px;
+}
+
+/* 나중에 뒤에 페이지로 넘어가면 앞 페이지로 넘어갈 수 있기 때문에 진한 검은색으로*/
+
+#cs > .qna > .list > article > .page > .next {
+    font-size: 0px;
+    background-image: url(../img/cs_sprites.png);
+    background-position: -628px -652px;
+}
+
+#cs > .qna > .list > article > .btnWrite {
+    color: #FFFFFF;
+    font-size: 20px;
+    background: #067dfd;
+    margin: -48px 0px 0px;
+    padding: 10px 20px;
+    border: 1px solid #0063ce;
+    border-radius: 2px;
+    float: right;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* qna view */
+/*---------------------------------------------------------------------*/
+
+#cs > .qna > .view > article > div.top {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .view > article > .top > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .qna > .view > article > .top > h2 {
+    font-size: 20px;
+}
+
+#cs > .qna > .view > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .qna > .view > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .view > aside > ul {}
+
+#cs > .qna > .view > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .qna > .view > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .qna > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .qna > .view > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+#cs > .qna > section > article {
+    float: right;
+    width: 980px;
+    min-height: 600px;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .qna > section > article > nav {
+    width: 100%;
+    border-top: 2px solid#111;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 26px;
+    box-sizing: border-box;
+}
+
+#cs > .qna > .view > article > nav > .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#cs > .qna > .view > article > nav > .title > span {
+    color: #006CFF;
+    margin-right: 6px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#cs > .qna > .view > article > nav > .date {
+    font-size: 14px;
+    color: #777777;
+}
+
+#cs > .qna > .view > article > .content {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#cs > .qna > .view > article > .content > p {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#cs > .qna > .view > article > .answer {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#cs > .qna > .view > article > .answer > h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+#cs > .qna > .view > article > .answer > p {
+    width: 100%;
+    height: auto;
+    padding: 26px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e9e9e9;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+#cs > .qna > .view > article > .btnList {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 58px;
+    box-sizing: border-box;
+}
+
+/* qna write */
+/*--------------------------------------------------------------------*/
+
+#cs > .qna {
+
+}
+
+#cs > .qna > nav {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .qna > nav > div {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#cs > .qna > nav > div > p {
+    font-size: 16px;
+    margin-top: 16px;
+    float: left;
+}
+
+#cs > .qna > nav > div > p >span {
+    margin: 0px 10px;
+    font-size: 12px;
+    color: #777;
+}
+
+#cs > .qna > section {
+    position: relative;
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#cs > .qna > .write > aside {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    border-right: 1px solid #e9e9e9;
+    box-sizing: border-box;
+}
+
+#cs > .qna > .write > aside > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .write > aside > ul {}
+
+#cs > .qna > .write > aside > ul > li {
+    margin-bottom: 16px;
+}
+
+#cs > .qna > .write > aside > ul > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #9e9e9e;
+}
+
+#cs > .qna > section > aside > ul > li > a:hover {
+    color: #111;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#cs > .qna > .write > aside > ul > li.on > a {
+    color: #111;
+    text-decoration: underline;
+}
+
+
+#cs > .qna > .write > article {
+    float: right;
+    padding: 26px;
+    width: 980px;
+    min-height: 600px;
+    box-sizing: border-box;
+    
+}
+
+#cs > .qna > .write > article > nav {
+    width: 100%;
+    height: auto;
+    margin-bottom: 26px;
+}
+
+#cs > .qna > .write > article > nav > h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cs > .qna > .write > article > nav > h2 {
+    font-size: 20px;
+}
+
+#cs > .qna > .write > article > table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 2px solid #000000;
+}
+
+#cs > .qna > .write > article > table > tr {
+    width: 100%;
+    height: 26px;
+}
+
+#cs > .qna > .write > article > table td {
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+#cs > .qna > .write > article > table td:first-child {
+    width: 100px;
+    font-size: 16px;
+}
+
+#cs > .qna > .write > article > table > tbody > tr > td > select {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#cs > .qna > .write > article > table > tbody > tr > td > input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+#cs > .qna > .write > article > table > tbody > tr > td > textarea {
+    width: 100%;
+    height: 360px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+    padding: 10px;
+}
+
+#cs > .qna > .write > article > table  a {
+    font-size: 16px;
+}
+
+#cs > .qna > .write > article > .btnList {
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+    border-radius: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 58px;
+    box-sizing: border-box;
+}
+
+#cs > div > section > article > input {
+    display: inline-block;
+    background: #067DFD;
+    color: white;
+    width: 200px;
+    height: 60px;
+    margin-top: 40px;
+    border: 1px solid #0063ce;
+    border-radius: 34px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 58px;
+    box-sizing: border-box;
+}
+
+#cs > div > section > article > input:hover {
+    background: #0954f6;
+}

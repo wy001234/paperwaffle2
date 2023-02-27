@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자주묻는질문 작성</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="/js/gnb.js"></script>
+    <!-- 2023/02/10 자주묻는질문 작성 화면구현 - 길은섭 -->
+</head>
+<body>
+    <div id="admin-wrapper">
+        <header>
+            <div>
+                <a href="/index.html" class="logo">
+                    <img src="/img/admin_logo.png" alt="admin_logo">
+                </a>
+                <p>
+                    <span>홍길동님 반갑습니다. </span>
+                    <a href="/index.html">HOME |</a>
+                    <a href="#">로그아웃 |</a>
+                    <a href="./list.html">고객센터</a>
+                </p>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <ul id="gnb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                            환경설정
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">기본환경설정</a>
+                            </li>
+                            <li>
+                                <a href="#">배너관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-store" aria-hidden="true"></i>
+                            상점관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">판매자현황</a>
+                            </li>
+                            <li>
+                                <a href="#">재고관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            회원관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">회원현황</a>
+                            </li>
+                            <li>
+                                <a href="#">포인트관리</a>
+                            </li>
+                            <li>
+                                <a href="#">비회원관리</a>
+                            </li>
+                            <li>
+                                <a href="#">접속자집계</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-box-open" aria-hidden="true"></i>
+                            상품관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="/product/list.html">상품목록</a>
+                            </li>
+                            <li>
+                                <a href="/product/register.html">상품등록</a>
+                            </li>
+                            <li>
+                                <a href="#">재고관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-credit-card" aria-hidden="true"></i>
+                            주문관리
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">주문현황</a>
+                            </li>
+                            <li>
+                                <a href="#">매출현황</a>
+                            </li>
+                            <li>
+                                <a href="#">결제관리</a>
+                            </li>
+                            <li>
+                                <a href="#">배송관리</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                            고객센터
+                        </a>
+                        <ol>
+                            <li>
+                                <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                                <a href="#">자주묻는질문</a>
+                            </li>
+                            <li>
+                                <a href="#">문의하기</a>
+                            </li>
+                        </ol>
+                    </li>
+                </ul>
+            </aside>
+            <!-- write -->
+            <section id="admin-faq-write">
+                <nav>
+                    <h3>자주묻는질문 작성</h3>
+                    <p>
+                        HOME > 고객센터 > 
+                        <strong>자주묻는질문</strong>
+                    </p>
+                </nav>
+                <section>
+                    <table>
+                        <tr>
+                            <td>유형</td>
+                            <td>
+                                <div>
+                                    <select name="search1">
+                                        <option value="search1">1차 선택</option>
+                                        <option value="search2">회원</option>
+                                        <option value="search3">쿠폰/혜택/이벤트</option>
+                                        <option value="search4">주문/결제</option>
+                                        <option value="search5">배송</option>
+                                        <option value="search6">취소/반품/교환</option>
+                                        <option value="search7">여행/숙박/항공</option>
+                                        <option value="search8">안전거래</option>
+                                    </select>
+                                    <select name="search2">
+                                        <option value="search1">2차 선택</option>
+                                        <option value="search2">가입</option>
+                                        <option value="search3">탈퇴</option>
+                                        <option value="search4">회원정보</option>
+                                        <option value="search5">로그인</option>
+                                        <option value="search6">쿠폰/할인혜택</option>
+                                        <option value="search7">포인트</option>
+                                        <option value="search8">제휴</option>
+                                        <option value="search9">이벤트</option>
+                                        <option value="search10">상품</option>
+                                        <option value="search11">결제</option>
+                                        <option value="search12">구매내역</option>
+                                        <option value="search13">영수증/증빙</option>
+                                        <option value="search14">배송상태/기간</option>
+                                        <option value="search15">배송정보확인/변경</option>
+                                        <option value="search16">해외배송</option>
+                                        <option value="search17">당일배송</option>
+                                        <option value="search18">해외직구</option>
+                                        <option value="search19">반품신청/철회</option>
+                                        <option value="search20">반품정보확인/변경</option>
+                                        <option value="search21">교환 AS신청/철회</option>
+                                        <option value="search22">교환정보확인/변경</option>
+                                        <option value="search23">취소신청/철회</option>
+                                        <option value="search24">취소확인/환불정보</option>
+                                        <option value="search25">여행/숙박</option>
+                                        <option value="search26">항공</option>
+                                        <option value="search27">서비스 이용규칙 위반</option>
+                                        <option value="search28">지식재산권침해</option>
+                                        <option value="search29">법령 및 정책위반 상품</option>
+                                        <option value="search30">게시물 정책위반</option>
+                                        <option value="search31">직거래/외부거래유도</option>
+                                        <option value="search32">표시광고</option>
+                                        <option value="search33">청소년 위해상품/이미지</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>제목</td>
+                            <td><input type="text" placeholder="제목을 입력합니다."></td>
+                        </tr>
+                        <tr>
+                            <td>내용</td>
+                            <td><input type="text" placeholder="내용을 입력합니다."></td>
+                        </tr>
+                    </table>
+                    <div>
+                        <input type="button" value="등록하기">
+                        <a href="./list.html">취소하기</a>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <p>
+                    Copyright ©kmarket.co.kr All rights reserved. KMARKET ADMINISTRATOR Version 5.4.1.2
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

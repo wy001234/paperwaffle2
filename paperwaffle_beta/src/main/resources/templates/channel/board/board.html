@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="https://paperwaffle.com/plugin/nariya/app/bs3/css/bootstrap.min.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="canonical" href="https://paperwaffle.com/bbs/login.php?url=%2F">
+    <link rel="stylesheet" href="https://paperwaffle.com/plugin/nariya/css/plugin.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/css/theme.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="stylesheet"
+        href="https://paperwaffle.com/theme/Nariya-Basic/layout/title/title-basic/title.css?ver=2022-10-07-a4">
+    <link rel="stylesheet" href="https://paperwaffle.com/skin/member/Nariya-Basic/style.css?ver=2022-10-07-a4">
+    <link rel="stylesheet"
+        href="https://paperwaffle.com/theme/Nariya-Basic/layout/footer/footer-basic/footer.css?ver=2022-10-07-a4">
+    <link rel="stylesheet"
+        href="https://paperwaffle.com/theme/Nariya-Basic/layout/sidebar/sidebar-basic/sidebar.css?ver=20210107_01">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/skin/social/style.css?ver=2022-10-07-a4">
+    <link rel="stylesheet" href="https://paperwaffle.com/js/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+
+    <link rel="stylesheet" href="https://paperwaffle.com/plugin/nariya/app/bs3/css/bootstrap.min.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="stylesheet" href="https://paperwaffle.com/plugin/nariya/css/plugin.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/css/theme.css?ver=2022-10-07-a4"
+        type="text/css">
+    <link rel="stylesheet"
+        href="https://paperwaffle.com/theme/Nariya-Basic/layout/footer/footer-basic/footer.css?ver=2022-10-07-a4">
+    <link rel="stylesheet"
+        href="https://paperwaffle.com/theme/Nariya-Basic/layout/sidebar/sidebar-basic/sidebar.css?ver=20210107_01">
+    <link rel="stylesheet" href="https://paperwaffle.com/js/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/_JS/swiper/dist/css/swiper.min.css?ver=01">
+    <script src="https://paperwaffle.com/theme/Nariya-Basic/_JS/swiper/dist/js/swiper.min.js?ver=01"></script>
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/_JS/common.css?ver=2022-10-07-a4">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/_JS/animation.css?ver=2022-10-07-a4">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/_JS/layout.css?ver=2022-10-07-a4">
+    <link rel="stylesheet" href="https://paperwaffle.com/theme/Nariya-Basic/_JS/custom.css?ver=2022-10-07-a4">
+    <script src="https://paperwaffle.com/plugin/nariya/js/common.js?ver=2022-10-07-a4"></script>
+    <script src="https://paperwaffle.com/js/wrest.js?ver=2022-10-07-a4"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- 컨텐츠 시작 -->
+    <div class="modal">
+        <!-- 헤더 -->
+        <!-- 네비게이션 바 -->
+        <nav class="navi">
+            <ul class="nav_container">
+                <li class="nav_container_item"><a onclick=" window.location.href='./게시판 설정.html'">게시판 설정</a></li>
+                <li class="nav_container_item"><a onclick=" window.location.href='./작품관리.html'">작품 관리</a></li>
+                <li class="nav_container_item"><a onclick=" window.location.href='./의뢰관리.html'">의뢰 관리</a></li>
+                <li class="nav_container_item"><a onclick=" window.location.href='./팬관리.html'">팬관리</a></li>
+            </ul>
+        </nav>
+        <!-- 메인 바디 -->
+        <div class="body_main">
+            <div class="main_profle">
+                <figure>
+                    <img src="./images/favorite_bg.jpg" alt="백 프로필">
+                </figure>
+                <div class="main_profle_id">
+                    <button type="button" class="btn btn_waffle" style="width : 30%; height: 60px;">보유와플: ##개</button>
+                    <div class="main_profle_name">
+                        <figure>
+                            <img src="./images/reserve_store_medal_back.png" alt="프로필">
+                        </figure>
+                        <h2>종이와플</h2>
+                    </div>
+                    <button type="button" class="btn btn_correction">개인프로필수정</button>
+                </div> <!-- profle end -->
+            </div>
+            <div class="main_btn">
+                <button type="button" class="btn btn_list">게시판 설정</button>
+                <button type="button" class="btn btn_list">의뢰관리</button>
+                <button type="button" class="btn btn_list" onclick=" window.location.href='./작품관리.html'">작품관리</button>
+            </div> <!-- "main_btn end -->
+        </div> <!-- main_profle end -->
+        <div class="container">
+            <div class="container_left">
+                <div class="container_left_btn--up">
+                    <button type="button" class="btn_set">공지사항</button>
+                    <button type="button" class="btn_set">게시판</button>
+                    <button type="button" class="btn_set">구분선</button>
+                    <button type="button" class="btn_set">인기글</button>
+                    <button type="button" class="btn_set">출석체크</button>
+                    <button type="button" class="btn_set">팬 게시판</button>
+                </div>
+                <div class="container_left_btn--down">
+                    <button type="button" class="btn_save">저장하기</button>
+                    <button type="button" class="btn_cancel">취소하기</button>
+                </div>
+            </div> <!-- body_left end  -->
+            <div class="container_right">
+                <div class="container_right_box">
+                    <div class="container_right_box_list">
+                        <p>공지사항</p>
+                        <p>공지사항</p>
+                        <p>---------------------------------(구분선)</p>
+                        <p>인기글</p>
+                        <p>출석체크</p>
+                    </div>
+                </div>
+            </div>
+            <!--body_right end-->
+        </div> <!-- container end -->
+        <div class="container_footer">
+            <h2>상세 내용</h2>
+            <div class="container_footer_box">
+                <ul class="container_footer_box_list">
+                    <li class="container_footer_box_list_item">
+                        <h3>공지사항</h3>
+                        <p>공지사항 전달을 위한 게시판입니다. 권한이 있는 사람만 작성 가능합니다.</p>
+                    </li>
+                    <li class="container_footer_box_list_item">
+                        <h3>카테고리명</h3>
+                        <input type="input" placeholder="카테고리명">
+                    </li>
+                    <li class="container_footer_box_list_item">
+                        <h3>권한 설정</h3>
+                        <label><input type="checkbox"><span>회원 공개</span></label>
+                        <label><input type="checkbox">비회원 공개</label>
+                        <h3> 팬 공개 설정</h3>
+                        <label><input type="checkbox">일반 팬</label>
+                        <label><input type="checkbox">고급 팬</label>
+                        <label><input type="checkbox">프리미엄 팬</label>
+                    </li>
+                    <li class="container_footer_box_list_item">
+                        <h3>권한 설정</h3>
+                        <div>
+                            <p>글 쓰기</p>
+                            <label><input type="checkbox">비회원</label>
+                            <label><input type="checkbox">일반 팬</label>
+                            <label><input type="checkbox">고급 팬</label>
+                            <label><input type="checkbox">프리미엄 팬</label>
+                        </div>
+                        <div>
+                            <p>댓글 쓰기</p>
+                            <label><input type="checkbox">비회원</label>
+                            <label><input type="checkbox">일반 팬</label>
+                            <label><input type="checkbox">고급 팬</label>
+                            <label><input type="checkbox">프리미엄 팬</label>
+                        </div>
+                        <div>
+                            <p>읽기 쓰기</p>
+                            <label><input type="checkbox">비회원</label>
+                            <label><input type="checkbox">일반 팬</label>
+                            <label><input type="checkbox">고급 팬</label>
+                            <label><input type="checkbox">프리미엄 팬</label>
+                        </div>
+                    </li>
+                    <li class="container_footer_box_list_item">
+                        <h3>형태</h3>
+                        <label><input type="checkbox">게시판 형</label>
+                        <label><input type="checkbox">일반 형</label>
+                    </li>
+                    <div>
+                        <button type="button" class="btn_cancel_02">취소</button>
+                        <button type="button" class="btn_save_02">완료</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
